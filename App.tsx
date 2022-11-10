@@ -8,9 +8,7 @@ import {
 	useColorScheme,
 	View,
 } from "react-native";
-import Header from "./components/Header";
-import Photos from "./components/Photos";
-import Name from "./components/Name";
+import Card from "./src/components/Card";
 
 const App = () => {
 	const isDarkMode = useColorScheme() === "dark";
@@ -29,9 +27,7 @@ const App = () => {
 				contentInsetAdjustmentBehavior="automatic"
 				style={backgroundStyle}
 			>
-				<Header />
-				<Photos />
-				<Name />
+				<Card />
 			</ScrollView>
 		</SafeAreaView>
 	);
