@@ -8,8 +8,9 @@ import {
 	useColorScheme,
 	View,
 } from "react-native";
-import Header from "./components/Header/Header";
-import Photos from "./components/Photos/Photos";
+import Header from "./components/Header";
+import Photos from "./components/Photos";
+import Name from "./components/Name";
 
 const App = () => {
 	const isDarkMode = useColorScheme() === "dark";
@@ -30,28 +31,10 @@ const App = () => {
 			>
 				<Header />
 				<Photos />
+				<Name />
 			</ScrollView>
 		</SafeAreaView>
 	);
 };
-
-// const styles = StyleSheet.create({
-// 	sectionContainer: {
-// 		marginTop: 32,
-// 		paddingHorizontal: 24,
-// 	},
-// 	sectionTitle: {
-// 		fontSize: 24,
-// 		fontWeight: "600",
-// 	},
-// 	sectionDescription: {
-// 		marginTop: 8,
-// 		fontSize: 18,
-// 		fontWeight: "400",
-// 	},
-// 	highlight: {
-// 		fontWeight: "700",
-// 	},
-// });
 
 export default App;
