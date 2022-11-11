@@ -3,6 +3,8 @@ import { StyleSheet, Text, View } from "react-native";
 import data from "../data/userInfo.json";
 
 const Info: FC = () => {
+	console.log();
+
 	return (
 		<View>
 			{data.map(
@@ -12,14 +14,14 @@ const Info: FC = () => {
 						age,
 						here,
 						text,
-						location,
-						growth,
-						relations,
-						children,
-						religion,
-						philosophy,
-						character,
-						zodiac,
+						// location,
+						// growth,
+						// relations,
+						// children,
+						// religion,
+						// philosophy,
+						// character,
+						// zodiac
 					},
 					index
 				) => {
@@ -35,7 +37,7 @@ const Info: FC = () => {
 									<Text style={styles.here}>{here}</Text>
 									<Text style={styles.text}>{text}</Text>
 								</View>
-								<View style={styles.about}>
+								{/* <View style={styles.about}>
 									<Text style={styles.aboutElement}>{growth}</Text>
 									<Text style={styles.aboutElement}>{relations}</Text>
 									<Text style={styles.aboutElement}>{children}</Text>
@@ -44,7 +46,7 @@ const Info: FC = () => {
 									<Text style={styles.aboutElement}>{character}</Text>
 									<Text style={styles.aboutElement}>{zodiac}</Text>
 								</View>
-								<Text style={styles.location}>{location}</Text>
+								<Text style={styles.location}>{location}</Text> */}
 							</View>
 						</View>
 					);
